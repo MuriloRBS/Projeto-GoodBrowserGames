@@ -1,0 +1,238 @@
+/* Variáveis */
+:root{
+    --lilas: #D475B3;
+    --azul: #3DC3B6;
+    --azulEscuro: #1B2D51;
+    --bgColor: #F5F5F5;
+    --cinza: #D4D5DD;
+}
+
+/* Fontes */
+@font-face {
+    font-family: 'projectFont';
+    src: url(../fonts/Aldrich-Regular.ttf);
+}
+
+/* Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos básicos */
+body {
+    background-color: var(--bgColor);
+}
+
+* {
+    font-family: projectFont;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+/* Desktop */
+section {
+    width: 100%;
+    margin: auto;
+}
+
+section nav {
+    background-color: var(--lilas);
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+section nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+section nav ul li {
+    padding: 20px;
+    list-style-type: none;
+}
+
+section nav ul li a {
+    text-decoration: none;
+}
+
+section nav ul li img {
+    display: none;
+}
+
+section nav ul li p {
+    display: inline;
+    color: white;
+    font-size: 12pt;
+}
+
+section #resposta{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: center;
+}
+
+section #resposta #browserGame {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 24px;
+}
+
+section #resposta #browserGame #imagem {
+    width: 300px;
+    height: 300px;
+    margin: 16px;
+}
+
+section #resposta #browserGame #imagem img {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    
+}
+
+section #resposta #browserGame #informacao {
+    margin: 16px;
+    width: 50%;
+}
+
+section #resposta #browserGame #informacao #nome {
+    margin-bottom: 0px;
+    font-size: x-large;
+}
+
+section #resposta #browserGame #informacao #categoria {
+    margin-top: 0px;
+    color: var(--lilas);
+}
+
+section #resposta #browserGame #informacao #descricao {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+section #resposta #browserGame #informacao #botoes {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+section #resposta #browserGame #informacao #botoes input[type=button] {
+    height: 50px;
+    width: 80px;
+    color: var(--azulEscuro);
+    background-color: var(--azul);
+    border-radius: 10px;
+    text-align: center;
+    border: 0 none;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    margin: 0px 8px;
+}
+
+section #resposta #browserGame #informacao #botoes input[type=button] a {
+    text-decoration: none;
+}
+
+section #resposta #browserGame #informacao #botoes #avaliar {
+    background-color: #D475B3;
+}
+
+section #resposta #avaliacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 24px;
+}
+
+section #resposta #avaliacoes #avaliacao {
+    background-color: lightgray;
+    border-radius: 10px;
+    width: 40%;
+    margin: 20px;
+    padding: 24px;
+}
+
+section #resposta #avaliacoes #avaliacao #cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+section #resposta #avaliacoes #avaliacao #cabecalho #data {
+    margin-bottom: 4;
+    margin-top: 8;
+}
+
+section #resposta #avaliacoes #avaliacao #cabecalho #userName {
+    font-size: xx-large;
+    color: var(--lilas);
+    margin-top: 0;
+}
+
+section #resposta #avaliacoes #avaliacao #textoAva {
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+    outline: none;
+    font-size: medium;
+}
+
+section #resposta #avaliacoes #avaliacao #nota {
+    color: #3DC3B6;
+    font-size: xx-large;
+}
+
+section #resposta #avaliacoes #avaliacao #util {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section #resposta #avaliacoes #avaliacao #util #utilB {
+    height: 30%;
+    width: 80px;
+    color: var(--azulEscuro);
+    background-color: var(--azul);
+    border-radius: 10px;
+    text-align: center;
+    border: 0 none;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: 0;
+    background-color: var(--lilas);
+    width: 100%;
+}
+
+footer p {
+    font-size: 12pt;
+    color: white;
+    padding: 10px;
+}

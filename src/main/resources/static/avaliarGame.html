@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>ExaltaGame</title>
+        <script src="javascript/APIService.js"></script>
+        <script src="javascript/avaliarGameJS.js"></script>
+        <link rel="stylesheet" href="css/styleAvaliarGame.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section>
+            <nav>
+                <ul>
+                    <a href="index.html"><img src="https://i.imgur.com/oq1xrba.png" alt="logo" style="width:135px;height:50x;"></a>
+                    <li><a href="browserGame.html"><p>Voltar</p></a></li>
+                </ul>
+            </nav>
+            <div id="mensagem"></div>
+            <article>
+                <h2>Avaliar browserGame</h2>
+                <form>
+                    <textarea id="avaliacao" name="avaliacao" rows="5" cols="50" maxlength="400" placeholder="O que achou do jogo?" required></textarea>
+                    <br>
+                    <label>Nota (0 a 5): <input type="number" id="estrelas" name="estrelas" value="4" min="0" max="5"></label>
+                    <div class="side-by-side">
+                        <input type="button" id="cancelButton" value="Cancelar" onclick="location.href = 'browserGame.html';">
+                        <input type="button" value="Cadastrar" onclick="addAvaliacao()">
+                    </div>
+                </form>
+            </article>
+            <footer>
+                <p>GoodBrowserGames</p>
+                <p>Avalie browserGames</p>
+            </footer>
+        </section>
+    </body>
+</html>

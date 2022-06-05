@@ -1,0 +1,165 @@
+/* Variáveis */
+:root{
+    --lilas: #D475B3;
+    --azul: #3DC3B6;
+    --azulEscuro: #1B2D51;
+    --bgColor: #F5F5F5;
+    --cinza: #D4D5DD;
+}
+
+/* Fontes */
+@font-face {
+    font-family: 'projectFont';
+    src: url(../fonts/Aldrich-Regular.ttf);
+}
+
+/* Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos básicos */
+body {
+    background-color: var(--bgColor);
+}
+
+* {
+    font-family: projectFont;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+/* Desktop */
+section {
+    width: 100%;
+    margin: auto;
+}
+
+section nav {
+    background-color: var(--lilas);
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+section nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+section nav ul li {
+    padding: 20px;
+    list-style-type: none;
+}
+
+section nav ul li a {
+    text-decoration: none;
+}
+
+section nav ul li img {
+    display: none;
+}
+
+section nav ul li p {
+    display: inline;
+    color: white;
+    font-size: 12pt;
+}
+
+section #resposta{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: center;
+    box-shadow: 0px 10px 5px lightgray;
+    margin: 48px;
+    border-radius: 15px;
+}
+
+section #resposta #membro {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 24px;
+}
+
+section #resposta #membro #imagem {
+    width: 200px;
+    height: 200px;
+    margin: 16px;
+}
+
+section #resposta #membro #imagem img {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    
+}
+
+section #resposta #membro #informacao {
+    margin: 16px;
+    width: 50%;
+    font-size: larger;
+}
+
+section #resposta #membro #informacao #username {
+    margin-bottom: 0px;
+    font-size: 40pt;
+}
+
+section #resposta #membro #informacao #nomeCompleto {
+    margin-top: 0px;
+    color: var(--lilas);
+    font-size: 20pt;
+}
+
+section #resposta #botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+section #resposta #botoes input[type=button] {
+    width: 15%;
+    height: 60px;
+    color: var(--azulEscuro);
+    background-color: var(--azul);
+    border-radius: 10px;
+    text-align: center;
+    border: 0 none;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 8px;
+    margin-left: 32px;
+}
+
+section  #resposta #botoes #cancelButton {
+    background-color: var(--lilas);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: 0;
+    background-color: var(--lilas);
+    width: 100%;
+}
+
+footer p {
+    font-size: 12pt;
+    color: white;
+    padding: 10px;
+}
