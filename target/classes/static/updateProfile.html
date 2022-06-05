@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>ExaltaGame</title>
+        <script src="javascript/APIService.js"></script>
+        <script src="javascript/updateProfileJS.js"></script>
+        <link rel="stylesheet" href="css/styleCadastrarUser.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="getProfile()">
+        <section>
+            <nav>
+                <ul>
+                    <a href="index.html"><img src="https://i.imgur.com/oq1xrba.png" alt="logo" style="width:135px;height:50x;"></a>
+                    <li><a href="index.html"><p>Voltar</p></a></li>
+                </ul>
+            </nav>
+            <div id="mensagem"></div>
+            <article>
+                <h2>Atualizar Usuário</h2>
+                <form>
+                    <input class="field" type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo" required>
+                    <br>
+                    <label>Nascimento: <input type="date" id="dataNascimento" name="dataNascimento" value="2018-07-22"></label>
+                    <div class="side-by-side">
+                        <input class="field" type="text" id="username" name="username" placeholder="Username" required>
+                        <input class="field" type="password" id="senha" name="senha" placeholder="Senha" required>
+                    </div>
+                    <div class="side-by-side">
+                        <input class="field" type="text" id="estado" name="estado" placeholder="Estado" required>
+                        <input class="field" type="text" id="pais" name="pais" placeholder="País" required>
+                    </div>
+                    <input type="radio" name="user_role" id="Leitor" value="Leitor" checked>
+                    <label for="Leitor">Leitor</label>
+                    <input type="radio" name="user_role" id="Administrador" value="Administrador">
+                    <label for="Administrador">Administrador</label>
+                    <div class="side-by-side">
+                        <input type="button" id="cancelButton" value="Cancelar" onclick="location.href = 'profile.html';">
+                        <input type="button" id="confirm" value="Atualizar" onclick="updateMembro()">
+                    </div>
+                </form>
+            </article>
+            <footer>
+                <p>GoodBrowserGames</p>
+                <p>Avalie browserGames</p>
+            </footer>
+        </section>
+    </body>
+</html>

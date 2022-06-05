@@ -48,7 +48,7 @@ public class Usuario {
 
     @OneToMany(mappedBy = "membro", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JsonIgnore
-    private Set<UsuarioGameAvalia> membroGameAvaliacao;
+    private Set<UsuarioGameAvalia> usuarioGameAvalia;
 
     public Usuario() {
 
@@ -110,8 +110,8 @@ public class Usuario {
         this.estado = estado;
     }
 
-    public Set<UsuarioGameAvalia> getMembroGameAvaliacao() {
-        return membroGameAvaliacao;
+    public Set<UsuarioGameAvalia> getUsuarioGameAvalia() {
+        return usuarioGameAvalia;
     }
 
     public boolean getIsEditor() {

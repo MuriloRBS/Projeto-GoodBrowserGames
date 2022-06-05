@@ -1,0 +1,176 @@
+/* Variáveis */
+:root{
+    --lilas: #D475B3;
+    --azul: #3DC3B6;
+    --azulEscuro: #1B2D51;
+    --bgColor: #F5F5F5;
+    --cinza: #D4D5DD;
+}
+
+/* Fontes */
+@font-face {
+    font-family: 'projectFont';
+    src: url(../fonts/Aldrich-Regular.ttf);
+}
+
+/* Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos básicos */
+body {
+    background-color: var(--bgColor);
+}
+
+* {
+    font-family: projectFont;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+/* Desktop */
+section {
+    width: 100%;
+    margin: auto;
+}
+
+section nav {
+    background-color: var(--lilas);
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+section nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section nav ul li {
+    padding: 20px;
+    list-style-type: none;
+}
+
+section nav ul li a {
+    text-decoration: none;
+}
+
+section nav ul li img {
+    display: none;
+}
+
+section nav ul li p {
+    display: inline;
+    color: white;
+    font-size: 12pt;
+}
+
+section #mensagem {
+    text-align: center;
+}
+
+section #mensagem .error_message {
+    color: red;
+}
+
+section #mensagem .good {
+    color: #34C759;
+}
+
+section article {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 10px 5px lightgray;
+    margin: 48px;
+    border-radius: 15px;
+    height: 75%;
+}
+
+section article form {
+    width: 100%;
+    text-align: center;
+}
+
+section article form div .side-by-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+section article form .field {
+    width: 30%;
+    height: 60px;
+    background-color: var(--bgColor);
+    padding: 10px;
+    border: 0 none;
+    outline: none;
+    margin-bottom: 10px;
+    border: var(--azulEscuro) solid 3px;
+    font-size: large;
+}
+
+section article form label {
+    font-size: large;
+    width: 30%;
+    height: 60px;
+}
+
+section article form label input {
+    margin: 10px;
+    height: 60px;
+    width: 20%;
+    font-size: xx-large;
+}
+
+section article form input[type=button] {
+    width: 10%;
+    height: 50px;
+    color: var(--azulEscuro);
+    border-radius: 10px;
+    text-align: center;
+    border: 0 none;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#cancelButton {
+    background-color: #D475B3;
+}
+
+#confirm {
+    background-color: #3DC3B6;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: 0;
+    background-color: var(--lilas);
+    width: 100%;
+}
+
+footer p {
+    font-size: 12pt;
+    color: white;
+    padding: 10px;
+}

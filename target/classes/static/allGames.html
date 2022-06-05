@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>ExaltaGame</title>
+        <script src="javascript/APIService.js"></script>
+        <script src="javascript/allGamesJS.js"></script>
+        <link rel="stylesheet" href="css/styleAllGames.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="getAllGames()">
+        <section>
+            <nav>
+                <ul>
+                    <a href="allGames.html"><img src="https://i.imgur.com/oq1xrba.png" alt="logo" style="width:135px;height:50x;"></a>
+                    <div>
+                          <input type="text" placeholder="Search.." name="search" id="search">
+                          <input type="button" value="OK" onclick="searchGames(document.getElementById('search').value)" id="searchButton">
+                    </div>
+                    <input type="button" class="navB" value="TOP avaliações" onclick="getTopAvaliacoes()">
+                    <input type="button" class="navB" value="Recomendações" onclick="getRecomendações()">
+                    <a href="profile.html"><img src="imagens/iconePerfil.png"></a>
+                </ul>
+            </nav>
+            <article id="resposta"></article>
+            <footer>
+                <p>GoodBrowserGames</p>
+                <p>Avalie browserGames</p>
+            </footer>
+        </section>
+    </body>
+</html>

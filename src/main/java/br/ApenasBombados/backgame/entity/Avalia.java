@@ -39,7 +39,7 @@ public class Avalia {
 
     @OneToMany(mappedBy = "avaliacao", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JsonIgnore
-    private Set<UsuarioGameAvalia> membroGameAvaliacao;
+    private Set<UsuarioGameAvalia> usuarioGameAvalia;
 
     public Avalia() {
 
@@ -85,7 +85,7 @@ public class Avalia {
         this.data = data;
     }
 
-    public Set<UsuarioGameAvalia> getMembroGameAvaliacao() {
-        return membroGameAvaliacao;
+    public Set<UsuarioGameAvalia> getUsuarioGameAvalia() {
+        return usuarioGameAvalia;
     }
 }

@@ -61,11 +61,11 @@ public class UsuarioGameAvalia {
         this.browserGame = browserGame;
     }
 
-    public Avalia getAvaliacao() {
+    public Avalia getAvalia() {
         return avaliacao;
     }
 
-    public void setAvaliacao(Avalia avaliacao) {
+    public void setAvalia(Avalia avaliacao) {
         this.avaliacao = avaliacao;
     }
 

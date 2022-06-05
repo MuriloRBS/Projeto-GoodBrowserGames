@@ -67,7 +67,7 @@ public class UserGameAvaliaController {
         if (!responseMGA.isPresent()) {
             if (responseAvaliacao.isPresent() && responseGame.isPresent() && responseMembro.isPresent()) {
                 UsuarioGameAvalia newMGA = new UsuarioGameAvalia();
-                newMGA.setAvaliacao(responseAvaliacao.get());
+                newMGA.setAvalia(responseAvaliacao.get());
                 newMGA.setBrowserGame(responseGame.get());
                 newMGA.setMembro(responseMembro.get());
                 return new ResponseEntity<UsuarioGameAvalia>(repository.save(newMGA), HttpStatus.OK);
