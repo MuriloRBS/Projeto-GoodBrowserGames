@@ -1,3 +1,4 @@
+<!--
 <html>
     <head>
         <meta charset="utf-8"/>
@@ -46,4 +47,129 @@
             </footer>
         </section>
     </body>
+</html>
+-->
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Apenas Bombados</title>
+        <script src="javascript/APIService.js"></script>
+        <script src="javascript/cadastrarUserJS.js"></script>
+        <link rel="stylesheet" href="css/styleCadastrarUser.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+  
+    <body onload="getProfile()">
+
+<head>
+    <div class="header">
+     <section class="container1 flex"> 
+        <div class="item flex-item-1"></div>   
+        <div class="item flex-item-1 title1">APENAS BOMBADOS</div>  
+        <div class="item flex-item-1"></div>    
+    </section>
+      </header>
+</head>
+
+<section class="vh-100" style="background-color: #eee;">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-12 col-xl-11">
+          <div class="card text-black" style="border-radius: 25px;">
+            <div class="card-body p-md-5">
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+  
+                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Atualizar Cadastro</p>
+  
+                  <form class="mx-1 mx-md-4">
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <label class="form-label" for="form3Example1c">Digite seu nome</label>
+                        <input type="text" id="nomeCompleto" name="nomeCompleto" class="form-control" required />        
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <label class="form-label" for="form3Example1c">Digite seu nome de Usuário</label>
+                          <input type="text" id="username" name="username" class="form-control" required/>        
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <label class="form-label" for="form3Example1c">Data de Nascimento</label>
+                          
+                          <input type="date" id="dataNascimento" name="dataNascimento" value="2018-07-22" class="form-control" required/>        
+                        </div>
+                      </div>
+                      
+                     
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <label class="form-label" for="form3Example1c">Estado</label>
+                          <input type="text" id="estado" name="estado" placeholder="Estado" class="form-control" required />        
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <label class="form-label" for="form3Example1c">País</label>
+                          <input type="text" id="pais" name="pais" placeholder="País" class="form-control"  required/>        
+                        </div>
+                      </div>
+                      
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                            <label class="form-label" for="form3Example4c">Senha</label>
+                          <input type="password" id="form3Example4c" id="senha" name="senha" placeholder="Senha"class="form-control" required/>
+                        </div>
+                      </div>
+                    
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="user_role" id="Leitor" value="Leitor" checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                     Leitor
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="user_role" id="Administrador" value="Administrador" style="margin-left: 10px;">
+                    <label class="form-check-label" for="flexRadioDefault2" style="margin-left: 10px;">
+                      Administrador
+                    </label>
+                  </div>
+                  </div>
+                
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                        <input type="button" class="btn btn-primary btn-lg" value="Atualizar" onclick="updateMembro()" style="background-color: #e22525dc; border: none;">  
+                        <input type="button" class="btn btn-primary btn-lg" id="cancelButton" value="Cancelar" onclick="location.href = 'profile.html';" style="background-color: #e22525dc; border: none; margin-left: 30px;">
+                        
+                
+                    </div>
+  
+                  </form>
+  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+
 </html>
