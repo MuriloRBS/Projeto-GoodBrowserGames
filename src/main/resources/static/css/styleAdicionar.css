@@ -1,3 +1,5 @@
+
+
 /* Desktop */
 section {
   width: 100%;
@@ -135,9 +137,6 @@ section article form input[type=button] {
 section article form #cancelButton {
   background-color: var(--lilas);
 }
-
-
-
 
 
 
