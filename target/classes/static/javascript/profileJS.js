@@ -28,7 +28,7 @@ function getUser(){
                         <div class="card-header">Profile Picture</div>
                         <div class="card-body text-center">
                             <!-- Profile picture image-->
-                            <img class="img-account-profile rounded-circle mb-2" src="imagens/iconePerfil.png" alt="">
+                            <img class="img-account-profile rounded-circle mb-2" style="width:70%;"src="imagens/iconePerfil.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -63,8 +63,8 @@ function getUser(){
                                     <label class="small mb-1" for="inputUsername">Data de Nascimento</label>
                                     <label class="form-control" id='pais'>${pais}
                                 </div>
-                                <button class="btn btn-primary" type="button" value='Atualizar dados' onclick='window.location = "updateProfile.html"'>Atualizar perfil</button>
-                            </form>
+                                <button class="btn btn-primary" style="background-color:#e22525dc;" type="button" value='Atualizar dados' onclick='window.location = "updateProfile.html"'>Atualizar perfil</button>
+                            
                         </div>
                  `
                /* `<div id='membro'>
@@ -86,10 +86,10 @@ function getUser(){
                     <input id="cancelButton" type='button' value='Sair' onclick='logOut()'>`*/
             if (isEditor == true) {
                 html +=  `<div class="row">
-                <input type='button'class="btn btn-primary" value='Adicionar Game' onclick='window.location = "adicionarGame.html"'>
-                <input type='button' class="btn btn-primary"value='Adicionar Categoria' onclick='window.location = "adicionarCategoria.html"'>
-                <input type='button' class="btn btn-primary" value='Obter Relatórios' onclick='goToUpdate()'>
-                </div></div>
+                <input type='button'class="btn btn-primary" style="background-color:#e22525dc;" value='Adicionar Game' onclick='window.location = "adicionarGame.html"'>
+                <input type='button' class="btn btn-primary" style="background-color:#e22525dc;" value='Adicionar Categoria' onclick='window.location = "adicionarCategoria.html"'>
+                <input type='button' class="btn btn-primary" style="background-color:#e22525dc;" value='Obter Relatorios' onclick='goToUpdate()'>
+                </div></div></form>
                 </div>
             </div>
         </div>`
