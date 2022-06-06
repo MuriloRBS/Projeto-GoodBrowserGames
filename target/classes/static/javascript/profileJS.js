@@ -18,7 +18,7 @@ function getUser(){
             var pais = response.pais
             var isEditor = response.isEditor
             html += 
-            `<div class="container-xl px-4 mt-4">
+            `<div class="container-xl px-4 mt-4" style="margin-top:200px;">
             <!-- Account page navigation-->
             <hr class="mt-0 mb-4">
             <div class="row">
@@ -31,8 +31,7 @@ function getUser(){
                             <img class="img-account-profile rounded-circle mb-2" style="width:70%;"src="imagens/iconePerfil.png" alt="">
                             <input id="cancelButton" type='button' value='Sair' onclick='logOut()' style="background-color:#e22525dc; border:none;" class="btn btn-primary">
                         </div>
-                        
-                        <button class="btn btn-primary" style="background-color:#e22525dc; border:none; " type="button" value='Atualizar dados' onclick='window.location = "updateProfile.html"'>Atualizar perfil</button>
+                        <input id="cancelButton" type='button' value='Sair' onclick='logOut()' style="background-color:#e22525dc; border:none;" class="btn btn-primary">
                     </div>
                 </div>
                 <div class="col-xl-8">
