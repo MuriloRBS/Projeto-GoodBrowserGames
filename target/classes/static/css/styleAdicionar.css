@@ -45,3 +45,11 @@ body a{
     text-decoration: none;
     color: white;
 }
+.botoesGames{
+  color: white;
+  background-color: #e22525dc;
+  font-family: pricedown;
+  font-size: 40px; 
+  list-style-type: none;
+  text-decoration: none;
+}
