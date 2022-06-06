@@ -29,7 +29,7 @@ function getUser(){
                         <div class="card-body text-center">
                             <!-- Profile picture image-->
                             <img class="img-account-profile rounded-circle mb-2" style="width:70%;"src="imagens/iconePerfil.png" alt="">
-                            <input id="cancelButton" type='button' value='Sair' onclick='logOut()' style="background-color:#e22525dc; border:none;" class="btn btn-primary">
+                            
                         </div>
                         <input id="cancelButton" type='button' value='Sair' onclick='logOut()' style="background-color:#e22525dc; border:none;" class="btn btn-primary">
                     </div>
