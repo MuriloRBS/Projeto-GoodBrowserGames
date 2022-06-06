@@ -20,13 +20,13 @@ function getUser(){
             html += 
             `<div class="row">
   <div class="col-md-8">
-  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.<img src='imagens/iconePerfil.png'></div>
     <div class="pb-3">
       .col-md-8
     </div>
     <div class="row">
-      <div class="col-md-6">.col-md-6</div>
-      <div class="col-md-6">.col-md-6</div>
+      <div class="col-md-6"><h1 id='username'>${username}</h1></div>
+      <div class="col-md-6"><h3 id='nomeCompleto'>${nomeCompleto}</h3></div>
     </div>
   </div>
 </div>`
