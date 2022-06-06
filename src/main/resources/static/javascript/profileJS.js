@@ -20,7 +20,7 @@ function getUser(){
             html += 
             `<div class="row">
   <div class="col-md-8">
-  <div class="col-md-4">.<img src='imagens/iconePerfil.png'></div>
+  <div class="col-md-4">.<img src='imagens/iconePerfil.png' style="width: auto; max-height: 30%;"></div>
     <div class="pb-3">
       .col-md-8
     </div>
