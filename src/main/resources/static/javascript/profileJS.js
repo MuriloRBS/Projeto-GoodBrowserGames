@@ -30,6 +30,8 @@ function getUser(){
                             <!-- Profile picture image-->
                             <img class="img-account-profile rounded-circle mb-2" style="width:70%;"src="imagens/iconePerfil.png" alt="">
                         </div>
+                        <input id="cancelButton" type='button' value='Sair' onclick='logOut()' style="background-color:#e22525dc; border:none;" class="btn btn-primary">
+                        <button class="btn btn-primary" style="background-color:#e22525dc; border:none; " type="button" value='Atualizar dados' onclick='window.location = "updateProfile.html"'>Atualizar perfil</button>
                     </div>
                 </div>
                 <div class="col-xl-8">
