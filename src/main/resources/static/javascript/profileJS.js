@@ -29,10 +29,6 @@ function getUser(){
                         <div class="card-body text-center">
                             <!-- Profile picture image-->
                             <img class="img-account-profile rounded-circle mb-2" src="imagens/iconePerfil.png" alt="">
-                            <!-- Profile picture help block-->
-                            <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
-                            <!-- Profile picture upload button-->
-                            <button class="btn btn-primary" type="button">Upload new image</button>
                         </div>
                     </div>
                 </div>
@@ -67,7 +63,7 @@ function getUser(){
                                     <label class="small mb-1" for="inputUsername">Data de Nascimento</label>
                                     <label class="form-control" id='pais'>${pais}
                                 </div>
-                                <button class="btn btn-primary" type="button">Save changes</button>
+                                <button class="btn btn-primary" type="button" value='Atualizar dados' onclick='window.location = "updateProfile.html"'>Atualizar perfil</button>
                             </form>
                         </div>
                  `
@@ -89,11 +85,11 @@ function getUser(){
                     <div id="side-by-side">
                     <input id="cancelButton" type='button' value='Sair' onclick='logOut()'>`*/
             if (isEditor == true) {
-                html +=  `
+                html +=  `<div class="row">
                 <input type='button'class="btn btn-primary" value='Adicionar Game' onclick='window.location = "adicionarGame.html"'>
                 <input type='button' class="btn btn-primary"value='Adicionar Categoria' onclick='window.location = "adicionarCategoria.html"'>
                 <input type='button' class="btn btn-primary" value='Obter Relatórios' onclick='goToUpdate()'>
-                </div>
+                </div></div>
                 </div>
             </div>
         </div>`
