@@ -52,4 +52,5 @@ body a{
   font-size: 40px; 
   list-style-type: none;
   text-decoration: none;
+  border: none;
 }
