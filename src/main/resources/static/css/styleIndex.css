@@ -1,161 +1,71 @@
-/* Variáveis */
-:root{
-    --lilas: #D475B3;
-    --azul: #3DC3B6;
-    --azulEscuro: #1B2D51;
-    --bgColor: #F5F5F5;
-    --cinza: #D4D5DD;
-}
-
-/* Fontes */
 @font-face {
-    font-family: 'projectFont';
-    src: url(../fonts/Aldrich-Regular.ttf);
-}
-
-/* Reset */
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilos básicos */
-body {
-    background-color: var(--bgColor);
-}
-
-* {
-    font-family: projectFont;
-}
-
-section #mensagem {
-    text-align: center;
-}
-
-section #mensagem .error_message {
-    color: red;
-}
-
-section #mensagem .good {
-    color: #34C759;
-}
-
-nav ul li {
-    cursor: pointer;
-}
-
-/* Desktop */
-section {
+    font-family: 'pricedown';
+    src: url('pricedown.eot');
+    src: url('pricedown.eot?#iefix') format('embedded-opentype'),
+         url('pricedown.woff2') format('woff2'),
+         url('pricedown.woff') format('woff'),
+         url('pricedown.otf') format('truetype'),
+         url('pricedown.svg#dhananjayawebregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .header{
     width: 100%;
-    margin: auto;
-}
-
-section nav {
-    background-color: var(--lilas);
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
-    margin: 0;
-    margin-bottom: 2%;
-}
-
-section nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-section nav ul li {
-    padding: 20px;
-    list-style-type: none;
-}
-
-section nav ul li a {
-    text-decoration: none;
-}
-
-section nav ul li img {
-    display: none;
-}
-
-section nav ul li p {
-    display: inline;
-    color: white;
-    font-size: 12pt;
-}
-
-section article {
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0px 10px 5px lightgray;
-    margin: 48px;
-    border-radius: 15px;
-    height: 50%;
-}
-
-section article form {
-    width: 100%;
-    text-align: center;
-}
-
-section article form div .side-by-side {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-
-}
-
-section article form .field {
-    width: 30%;
+    min-height: 300px;
+    height: auto;
+    background-color: #e22525dc;
+    border: solid 2px black;
+  }
+  .title1{
+  color: white;
+  font-family: pricedown;
+  font-size: 100px;
+  
+  
+  }
+  .title2{
+    color: black;
+    font-family: 'pricedown';
+    font-size: 60px;
     height: 60px;
-    background-color: var(--bgColor);
-    font-size: large;
-    padding: 10px;
-    border: 0 none;
-    outline: none;
-    margin-bottom: 10px;
-    border: var(--azulEscuro) solid 3px;
-}
-
-section article form input[type=button] {
-    width: 10%;
-    height: 50px;
-    color: var(--azulEscuro);
-    background-color: var(--azul);
-    border-radius: 10px;
-    text-align: center;
-    border: 0 none;
-    padding: 10px;
-    outline: none;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-section article form #cadastrarButton {
-    background-color: var(--lilas);
-}
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    height: 70px;
-    padding-left: 10px;
-    padding-right: 10px;
-    bottom: 0;
-    background-color: var(--lilas);
-    width: 100%;
-}
-
-footer p {
-    font-size: 12pt;
-    color: white;
-    padding: 10px;
-}
+    
+    
+    }
+  .flex {
+  display: flex;
+  }
+  
+  .flex-wrap {
+  flex-wrap: wrap;
+  }
+  
+  .flex-item-1 {
+  flex: 1;
+   
+  }
+  
+  /* Flex Item */
+  .item {
+  margin: 5px;
+  text-align: center;
+    margin-top: 40px;
+  
+  }
+  
+  .container1 {
+  margin: 0 auto;
+  
+  }
+  
+  .logo{
+    width: 200px;
+    height: auto;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .logo2{
+    width: 200px;
+    height: auto;
+  
