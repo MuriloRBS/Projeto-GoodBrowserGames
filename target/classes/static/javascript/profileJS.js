@@ -25,7 +25,7 @@ function getUser(){
                 <div class="col-xl-4">
                     <!-- Profile picture card-->
                     <div class="card mb-4 mb-xl-0">
-                        <div class="card-header">Profile Picture</div>
+                        <div class="card-header">Foto de Perfil</div>
                         <div class="card-body text-center">
                             <!-- Profile picture image-->
                             <img class="img-account-profile rounded-circle mb-2" style="width:70%;"src="imagens/iconePerfil.png" alt="">
@@ -35,7 +35,7 @@ function getUser(){
                 <div class="col-xl-8">
                     <!-- Account details card-->
                     <div class="card mb-4">
-                        <div class="card-header">Account Details</div>
+                        <div class="card-header">Detalhes do Cadastro</div>
                         <div class="card-body">
                             <form>
                                 <!-- Form Group (username)-->
@@ -60,7 +60,7 @@ function getUser(){
                                 </div>
                                 <!-- Form Group (pais)-->
                                 <div class="mb-3">
-                                    <label class="small mb-1" for="inputUsername">Data de Nascimento</label>
+                                    <label class="small mb-1" for="inputUsername">Pais</label>
                                     <label class="form-control" id='pais'>${pais}
                                 </div>
                                 <button class="btn btn-primary" style="background-color:#e22525dc; border:none; " type="button" value='Atualizar dados' onclick='window.location = "updateProfile.html"'>Atualizar perfil</button>
@@ -87,11 +87,11 @@ function getUser(){
             if (isEditor == true) {
                 html +=  `<div class="row" style="margin-left:2%;">
                 <input type='button'class="btn btn-primary" style="background-color:#e22525dc; display: inline-flex;
-                width: auto; border:none;" value='Adicionar Game' onclick='window.location = "adicionarGame.html"'>
+                width: auto; border:none; margin: auto; margin-left: 0;" value='Adicionar Game' onclick='window.location = "adicionarGame.html"'>
                 <input type='button' class="btn btn-primary" style="background-color:#e22525dc; display: inline-flex;
-                width: auto; border:none;" value='Adicionar Categoria' onclick='window.location = "adicionarCategoria.html"'>
+                width: auto; border:none; margin: auto; margin-left: 0;" value='Adicionar Categoria' onclick='window.location = "adicionarCategoria.html"'>
                 <input type='button' class="btn btn-primary" style="background-color:#e22525dc; display: inline-flex;
-                width: auto; border:none;" value='Obter Relatorios' onclick='goToUpdate()'>
+                width: auto; border:none;margin: auto; margin-left: 0;" value='Obter Relatorios' onclick='goToUpdate()'>
                 </div></div></form>
                 </div>
             </div>
