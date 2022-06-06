@@ -63,7 +63,7 @@ function getUser(){
                                     <label class="small mb-1" for="inputUsername">Data de Nascimento</label>
                                     <label class="form-control" id='pais'>${pais}
                                 </div>
-                                <button class="btn btn-primary" style="background-color:#e22525dc;" type="button" value='Atualizar dados' onclick='window.location = "updateProfile.html"'>Atualizar perfil</button>
+                                <button class="btn btn-primary" style="background-color:#e22525dc; border:none; " type="button" value='Atualizar dados' onclick='window.location = "updateProfile.html"'>Atualizar perfil</button>
                             
                         </div>
                  `
@@ -85,10 +85,13 @@ function getUser(){
                     <div id="side-by-side">
                     <input id="cancelButton" type='button' value='Sair' onclick='logOut()'>`*/
             if (isEditor == true) {
-                html +=  `<div class="row">
-                <input type='button'class="btn btn-primary" style="background-color:#e22525dc;" value='Adicionar Game' onclick='window.location = "adicionarGame.html"'>
-                <input type='button' class="btn btn-primary" style="background-color:#e22525dc;" value='Adicionar Categoria' onclick='window.location = "adicionarCategoria.html"'>
-                <input type='button' class="btn btn-primary" style="background-color:#e22525dc;" value='Obter Relatorios' onclick='goToUpdate()'>
+                html +=  `<div class="row" style="margin-left:2%;">
+                <input type='button'class="btn btn-primary" style="background-color:#e22525dc; display: inline-flex;
+                width: auto; border:none;" value='Adicionar Game' onclick='window.location = "adicionarGame.html"'>
+                <input type='button' class="btn btn-primary" style="background-color:#e22525dc; display: inline-flex;
+                width: auto; border:none;" value='Adicionar Categoria' onclick='window.location = "adicionarCategoria.html"'>
+                <input type='button' class="btn btn-primary" style="background-color:#e22525dc; display: inline-flex;
+                width: auto; border:none;" value='Obter Relatorios' onclick='goToUpdate()'>
                 </div></div></form>
                 </div>
             </div>
