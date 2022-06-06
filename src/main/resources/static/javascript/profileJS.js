@@ -67,12 +67,10 @@ function getUser(){
                                     <label class="small mb-1" for="inputUsername">Data de Nascimento</label>
                                     <label class="form-control" id='pais'>${pais}
                                 </div>
+                                <button class="btn btn-primary" type="button">Save changes</button>
                             </form>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>`
+                 `
                /* `<div id='membro'>
                     <div id='imagem'>
                         <img src='imagens/iconePerfil.png'>
@@ -92,9 +90,13 @@ function getUser(){
                     <input id="cancelButton" type='button' value='Sair' onclick='logOut()'>`*/
             if (isEditor == true) {
                 html +=  `
-                <input type='button' value='Adicionar Game' onclick='window.location = "adicionarGame.html"'>
-                <input type='button' value='Adicionar Categoria' onclick='window.location = "adicionarCategoria.html"'>
-                <input type='button' value='Obter Relatórios' onclick='goToUpdate()'>`
+                <input type='button'class="btn btn-primary" value='Adicionar Game' onclick='window.location = "adicionarGame.html"'>
+                <input type='button' class="btn btn-primary"value='Adicionar Categoria' onclick='window.location = "adicionarCategoria.html"'>
+                <input type='button' class="btn btn-primary" value='Obter Relatórios' onclick='goToUpdate()'>
+                </div>
+                </div>
+            </div>
+        </div>`
             }   
             html += `</div></div>`;
 
