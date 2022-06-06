@@ -1,3 +1,146 @@
+/* Desktop */
+section {
+  width: 100%;
+  margin: auto;
+}
+
+section nav {
+  background-color: var(--lilas);
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+section nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section nav ul li {
+  padding: 20px;
+  list-style-type: none;
+}
+
+section nav ul li a {
+  text-decoration: none;
+}
+
+section nav ul li img {
+  display: none;
+}
+
+section nav ul li p {
+  display: inline;
+  color: white;
+  font-size: 12pt;
+}
+
+section #mensagem {
+  text-align: center;
+}
+
+section #mensagem .error_message {
+  color: red;
+}
+
+section #mensagem .good {
+  color: #34C759;
+}
+
+section article {
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 10px 5px lightgray;
+  margin: 48px;
+  border-radius: 15px;
+  height: 75%;
+}
+
+section article form {
+  width: 100%;
+  text-align: center;
+}
+
+section article form div .side-by-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+section article form input[type=text] {
+  width: 30%;
+  height: 15%;
+  background-color: var(--bgColor);
+  padding: 10px;
+  border: 0 none;
+  outline: none;
+  margin-bottom: 10px;
+  border: var(--azulEscuro) solid 3px;
+  font-size: xx-large;
+}
+
+section article form #categoria {
+  background-color: var(--bgColor);
+  height: 15%;
+  padding: 10px;
+  border: 0 none;
+  outline: none;
+  margin-bottom: 10px;
+  border: var(--azulEscuro) solid 3px;
+  font-size: xx-large;
+}
+
+section article form #descricao {
+  height: 100px;
+  width: 60.5%;
+  background-color: var(--bgColor);
+  padding: 10px;
+  border: 0 none;
+  outline: none;
+  margin-bottom: 10px;
+  border: var(--azulEscuro) solid 3px;
+  font-size: x-large;
+}
+
+section article form #imagem {
+  width: 60.5%;
+}
+
+
+section article form input[type=button] {
+  width: 15%;
+  height: 15%;
+  color: var(--azulEscuro);
+  background-color: var(--azul);
+  border-radius: 10px;
+  text-align: center;
+  border: 0 none;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: large;
+}
+
+section article form #cancelButton {
+  background-color: var(--lilas);
+}
+
+
+
+
+
+
 .header{
     width: 100%;
     height: 80px;
