@@ -18,7 +18,19 @@ function getUser(){
             var pais = response.pais
             var isEditor = response.isEditor
             html += 
-                `<div id='membro'>
+            `<div class="row">
+  <div class="col-md-8">
+  <div class="col-md-4">.col-md-4</div>
+    <div class="pb-3">
+      .col-md-8
+    </div>
+    <div class="row">
+      <div class="col-md-6">.col-md-6</div>
+      <div class="col-md-6">.col-md-6</div>
+    </div>
+  </div>
+</div>`
+               /* `<div id='membro'>
                     <div id='imagem'>
                         <img src='imagens/iconePerfil.png'>
                     </div>
@@ -34,7 +46,7 @@ function getUser(){
                     <a href="" target="_blank"><input type='button' value='Atualizar dados' onclick='window.location = "updateProfile.html"'></a>
                     <input type='button' value='Avaliações' onclick='goToUpdate()'>
                     <div id="side-by-side">
-                    <input id="cancelButton" type='button' value='Sair' onclick='logOut()'>`
+                    <input id="cancelButton" type='button' value='Sair' onclick='logOut()'>`*/
             if (isEditor == true) {
                 html +=  `
                 <input type='button' value='Adicionar Game' onclick='window.location = "adicionarGame.html"'>
