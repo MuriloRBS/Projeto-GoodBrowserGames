@@ -18,13 +18,12 @@ function getBrowserGame(){
         var descricao = response.descricao;
         var url = response.url;
         var urlvideo = response.urlvideo
-        html += `<div class="container">
-        <div class="row">
-        <div class="col">
-         
-        </div>
-        <div class="col">
-        <div id='imagem'>
+        html += `
+    
+    <section class="container1 flex"> 
+    <div class="item flex-item-1"></div>   
+    <div class="item flex-item-1 title1">
+    <div id='imagem'>
         <img src='${img}'>
     </div>
     <div id='informacao'>
@@ -36,11 +35,13 @@ function getBrowserGame(){
             <a href="${url}" target="_blank"><input type='button' value='Jogar'></a>
             <a href="${urlvideo}" target="_blank"><input type='button' value='Vídeo'></a>;
         </div>
-        <div class="col">
-       
-        </div>
-      </div>
-    </div>`
+    </div>  
+    <div class="item flex-item-1"></div>    
+</section>
+    
+    
+    
+    `
 
         console.log(userRole)
 
