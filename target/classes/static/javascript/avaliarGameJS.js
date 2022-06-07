@@ -24,13 +24,13 @@ function verifyEdition() {
 
 function addAvaliacao() {
     if (document.getElementById('avaliacao').value.trim() != "") {
-        //const data = new Date()
+        const data = new Date()
 
          var avaliacao = {
             "estrelas": document.getElementById('estrelas').value,
             "quantidadeLikes": 0,
             "texto": document.getElementById('avaliacao').value.trim(),
-            //"data": data.toString()
+            "data": data.toString()
          }
 
          apiService.create("/avaliacoes", avaliacao, function (status, dados1) {
