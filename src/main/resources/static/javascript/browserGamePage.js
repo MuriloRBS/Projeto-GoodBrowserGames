@@ -20,7 +20,7 @@ function getBrowserGame(){
         var urlvideo = response.urlvideo
         html += `
     
-   <div style= "position:relative; margin-right:auto 0; margin-left:auto 0;">
+   <div style= "position:relative; margin-right:auto 0; margin-left:auto 0; display:inline-flex;">
     <div id='imagem'>
         <img src='${img}'>
     </div>
