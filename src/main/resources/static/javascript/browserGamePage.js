@@ -11,7 +11,6 @@ function getBrowserGame(){
             document.getElementById("mensagem").innerHTML += "<p class='error_message'>Erro ao carregar os dados: " + status + " - " + json.message + "</p>";
             return;
         }
-        
         var html = ""
         var img = response.imagem;
         var nome = response.nome;
@@ -19,8 +18,6 @@ function getBrowserGame(){
         var url = response.url;
         var urlvideo = response.urlvideo
         html += `
-    
-   
     <div id='imagem'>
         <img src='${img}'>
     </div>
@@ -35,10 +32,7 @@ function getBrowserGame(){
         </div>
     </div>  
  </div>
-    
-    
     `
-
         console.log(userRole)
 
         if (userRole == 1) {
@@ -61,12 +55,12 @@ function getBrowserGame(){
         html = ""
         for(var j=0; j<response.length; j++) {
             var avaliacao = response[j]
-            var myDate = new Date(avaliacao.avaliacao.data);
-            var final_date = myDate.getDate()+"-"+(myDate.getMonth()+1)+"-"+myDate.getFullYear();
+            //var myDate = new Date(avaliacao.avaliacao.data);
+           // var final_date = myDate.getDate()+"-"+(myDate.getMonth()+1)+"-"+myDate.getFullYear();
             html += 
             `<div id='avaliacao'>
                 <div id='cabecalho'>
-                    <p id='data'>${final_date}</p>
+                    !--<p id='data'>${final_date}</p>-->
                     <p id='userName'>${avaliacao.membro.username}</p>
                 </div>
                 <textarea cols='60' rows='8' id='textoAva'>${avaliacao.avaliacao.texto}</textarea>
