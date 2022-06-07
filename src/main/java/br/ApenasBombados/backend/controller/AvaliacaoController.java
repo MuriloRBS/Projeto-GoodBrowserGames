@@ -22,7 +22,7 @@ import br.ApenasBombados.backend.repository.BrowserGameRepository;
 import br.ApenasBombados.backend.repository.CategoriaRepository;
 
 @RestController
-public class AvaliaController {
+public class AvaliacaoController {
     @Autowired
     private AvaliaRepository repository;
 
