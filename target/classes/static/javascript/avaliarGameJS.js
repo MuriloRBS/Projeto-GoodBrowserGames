@@ -35,7 +35,7 @@ function addAvaliacao() {
 
          apiService.create("/avaliacoes", avaliacao, function (status, dados1) {
             if (status < 200 || status > 299) {
-                document.getElementById("mensagem").innerHTML = "<p class='error_message'>Este usuário já existe</p>";
+                document.getElementById("mensagem").innerHTML = "<p class='error_message'>Erro</p>";
                 return;
             }
             
