@@ -38,8 +38,8 @@ function getBrowserGame(){
         if (userRole == 1) {
             console.log("aoba")
             html +=  `
-            <input type='button' value='Atualizar' style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px;  onclick='goToUpdate()'>
-            <input type='button' value='Deletar' style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px; onclick='deleteGame(${save})'>`
+            <input type='button' value='Atualizar' style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px;"  onclick='goToUpdate()'>
+            <input type='button' value='Deletar' style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px; margin-left:20px;" onclick='deleteGame(${save})'>`
         }   
         html += `</div></div>`;
         getNameCategoria(categoriaId);
@@ -66,11 +66,11 @@ function getBrowserGame(){
                 <textarea cols='60' rows='8' id='textoAva'>${avaliacao.avaliacao.texto}</textarea>
                 <p id='nota'>Nota: ${avaliacao.avaliacao.estrelas}</p>
                 <div id="util">
-                    <input type='button' id='utilB' value='Útil' style="background-color:#e22525dc ; color:white ; text-size: 30px; border:none;"  onclick='marcarUtil(${avaliacao.avaliacao.id})'>
+                    <input type='button' id='utilB' value='Útil' style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px;"  onclick='marcarUtil(${avaliacao.avaliacao.id})'>
                     <p>${avaliacao.avaliacao.likes}</p>
                 </div>`
             if (avaliacao.membro.id == userId) {
-                html += `<input type='button' value='Editar' class="btn-primary" style="background-color:#e22525dc ; color:white ; text-size: 30px; border:none;"  onclick='saveAvaliacao(${avaliacao.avaliacao.id}); goToUpdateAvaliacao()'>`
+                html += `<input type='button' value='Editar' class="btn-primary" style="style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px;"  onclick='saveAvaliacao(${avaliacao.avaliacao.id}); goToUpdateAvaliacao()'>`
             }
             html += `</div>`;
         }
