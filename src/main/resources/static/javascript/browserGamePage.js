@@ -20,9 +20,7 @@ function getBrowserGame(){
         var urlvideo = response.urlvideo
         html += `
     
-    <section class="container1 flex"> 
-    <div class="item flex-item-1"></div>   
-    <div class="item flex-item-1 title1">
+   <div style: "position:relative; margin-right:auto 0; margin-left:auto 0;">
     <div id='imagem'>
         <img src='${img}'>
     </div>
@@ -36,9 +34,7 @@ function getBrowserGame(){
             <a href="${urlvideo}" target="_blank"><input type='button' value='Vídeo'></a>;
         </div>
     </div>  
-    <div class="item flex-item-1"></div>    
-</section>
-    
+ </div>
     
     
     `
