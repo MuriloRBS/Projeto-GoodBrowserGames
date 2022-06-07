@@ -20,7 +20,6 @@ function getBrowserGame(){
         var urlvideo = response.urlvideo
         html += `<div class="container">
         <div class="row">
-        <div class="row">
         <div class="col">
          
         </div>
