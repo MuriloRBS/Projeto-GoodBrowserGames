@@ -20,7 +20,7 @@ function getBrowserGame(){
         var urlvideo = response.urlvideo
         html += `
     
-   <div style: "position:relative; margin-right:auto 0; margin-left:auto 0;">
+   <div style= "position:relative; margin-right:auto 0; margin-left:auto 0;">
     <div id='imagem'>
         <img src='${img}'>
     </div>
@@ -32,6 +32,8 @@ function getBrowserGame(){
             <input type='button' id="avaliar" value='Avaliar' onclick='goToAvaliar()'>
             <a href="${url}" target="_blank"><input type='button' value='Jogar'></a>
             <a href="${urlvideo}" target="_blank"><input type='button' value='Vídeo'></a>;
+        </div>
+        <div style= "position:relative; margin-right:auto 0; margin-left:auto 0;">
         </div>
     </div>  
  </div>
