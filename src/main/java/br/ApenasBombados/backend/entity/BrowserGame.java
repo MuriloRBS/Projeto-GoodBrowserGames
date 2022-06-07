@@ -45,7 +45,7 @@ public class BrowserGame {
     private Categoria categoria;
 
     @OneToMany(mappedBy = "browserGame", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private Set<UsuarioGameAvalia> usuarioGameAvalia;
+    private Set<MembroGameAvaliacao> membroGameAvaliacao;
 
     public BrowserGame() {
 
@@ -107,7 +107,7 @@ public class BrowserGame {
         this.categoria = categoria;
     }
 
-    public Set<UsuarioGameAvalia> getUsuarioGameAvalia() {
-        return usuarioGameAvalia;
+    public Set<MembroGameAvaliacao> getMembroGameAvaliacao() {
+        return membroGameAvaliacao;
     }
 }

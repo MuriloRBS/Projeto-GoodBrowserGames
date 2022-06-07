@@ -14,63 +14,63 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.ApenasBombados.backend.entity.Categoria;
+import br.ApenasBombados.backend.entity.Membro;
+import br.ApenasBombados.backend.entity.MembroGameAvaliacao;
 import br.ApenasBombados.backend.entity.Avaliacao;
 import br.ApenasBombados.backend.entity.BrowserGame;
-import br.ApenasBombados.backend.entity.Categoria;
-import br.ApenasBombados.backend.entity.Usuario;
-import br.ApenasBombados.backend.entity.UsuarioGameAvalia;
-import br.ApenasBombados.backend.repository.AvaliaRepository;
+import br.ApenasBombados.backend.repository.AvaliacaoRepository;
 import br.ApenasBombados.backend.repository.BrowserGameRepository;
 import br.ApenasBombados.backend.repository.CategoriaRepository;
-import br.ApenasBombados.backend.repository.UserGameAvaliaRepository;
-import br.ApenasBombados.backend.repository.UsuarioRepository;
+import br.ApenasBombados.backend.repository.MembroGameAvaliacaoRepository;
+import br.ApenasBombados.backend.repository.MembroRepository;
 
 @RestController
-public class UserGameAvaliaController {
+public class MembroGameAvaliacaoController {
     @Autowired
-    private UserGameAvaliaRepository repository;
+    private MembroGameAvaliacaoRepository repository;
 
     @Autowired
-    private UsuarioRepository membroRepository;
+    private MembroRepository membroRepository;
 
     @Autowired
-    private AvaliaRepository avaliacaoRepository;
+    private AvaliacaoRepository avaliacaoRepository;
 
     @Autowired
     private BrowserGameRepository browserGameRepository;
 
     @RequestMapping(value = "/membrosGamesAvaliacoes", method = RequestMethod.GET)
-    public List<UsuarioGameAvalia> getAll() {
+    public List<MembroGameAvaliacao> getAll() {
         return repository.findAll();
     }
 
     @RequestMapping(value = "/membrosGamesAvaliacoes/{gameId}", method = RequestMethod.GET)
-    public ResponseEntity<List<UsuarioGameAvalia>> getByGame(@PathVariable(value = "gameId") Long gameId) {
-        Optional<List<UsuarioGameAvalia>> response = repository.findByBrowserGameId(gameId);
+    public ResponseEntity<List<MembroGameAvaliacao>> getByGame(@PathVariable(value = "gameId") Long gameId) {
+        Optional<List<MembroGameAvaliacao>> response = repository.findByBrowserGameId(gameId);
         if (response.isPresent()) {
-            return new ResponseEntity<List<UsuarioGameAvalia>>(response.get(), HttpStatus.OK);
+            return new ResponseEntity<List<MembroGameAvaliacao>>(response.get(), HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
 
     @RequestMapping(value = "/membrosGamesAvaliacoes/{membroId}/{gameId}/{avaliacaoId}", method = RequestMethod.POST)
-    public ResponseEntity<UsuarioGameAvalia> createMembrosGamesAvaliacoes(
+    public ResponseEntity<MembroGameAvaliacao> createMembrosGamesAvaliacoes(
             @PathVariable(value = "membroId") long membroId,
             @PathVariable(value = "gameId") long gameId,
             @PathVariable(value = "avaliacaoId") long avaliacaoId) {
-        Optional<Usuario> responseMembro = membroRepository.findById(membroId);
+        Optional<Membro> responseMembro = membroRepository.findById(membroId);
         Optional<BrowserGame> responseGame = browserGameRepository.findById(gameId);
         Optional<Avaliacao> responseAvaliacao = avaliacaoRepository.findById(avaliacaoId);
-        Optional<UsuarioGameAvalia> responseMGA = repository.findByMembroIdAndBrowserGameId(membroId, gameId);
+        Optional<MembroGameAvaliacao> responseMGA = repository.findByMembroIdAndBrowserGameId(membroId, gameId);
 
         if (!responseMGA.isPresent()) {
             if (responseAvaliacao.isPresent() && responseGame.isPresent() && responseMembro.isPresent()) {
-                UsuarioGameAvalia newMGA = new UsuarioGameAvalia();
-                newMGA.setAvalia(responseAvaliacao.get());
+                MembroGameAvaliacao newMGA = new MembroGameAvaliacao();
+                newMGA.setAvaliacao(responseAvaliacao.get());
                 newMGA.setBrowserGame(responseGame.get());
                 newMGA.setMembro(responseMembro.get());
-                return new ResponseEntity<UsuarioGameAvalia>(repository.save(newMGA), HttpStatus.OK);
+                return new ResponseEntity<MembroGameAvaliacao>(repository.save(newMGA), HttpStatus.OK);
             } else {
                 return new ResponseEntity<>(HttpStatus.NOT_FOUND);
             }
@@ -81,7 +81,7 @@ public class UserGameAvaliaController {
 
     @RequestMapping(value = "/membrosGamesAvaliacoes/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Object> Delete(@PathVariable(value = "id") long id) {
-        Optional<UsuarioGameAvalia> membroGameAvaliacao = repository.findById(id);
+        Optional<MembroGameAvaliacao> membroGameAvaliacao = repository.findById(id);
         if (membroGameAvaliacao.isPresent()) {
             repository.delete(membroGameAvaliacao.get());
             return new ResponseEntity<>(HttpStatus.OK);

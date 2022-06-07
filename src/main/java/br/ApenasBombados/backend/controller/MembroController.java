@@ -14,42 +14,42 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.ApenasBombados.backend.entity.Categoria;
+import br.ApenasBombados.backend.entity.Membro;
 import br.ApenasBombados.backend.entity.Avaliacao;
 import br.ApenasBombados.backend.entity.BrowserGame;
-import br.ApenasBombados.backend.entity.Categoria;
-import br.ApenasBombados.backend.entity.Usuario;
-import br.ApenasBombados.backend.repository.AvaliaRepository;
+import br.ApenasBombados.backend.repository.AvaliacaoRepository;
 import br.ApenasBombados.backend.repository.BrowserGameRepository;
 import br.ApenasBombados.backend.repository.CategoriaRepository;
-import br.ApenasBombados.backend.repository.UsuarioRepository;
+import br.ApenasBombados.backend.repository.MembroRepository;
 
 @RestController
-public class UsuarioController {
+public class MembroController {
     @Autowired
-    private UsuarioRepository repository;
+    private MembroRepository repository;
 
     @RequestMapping(value = "/membros", method = RequestMethod.GET)
-    public List<Usuario> getAvaliacoes() {
+    public List<Membro> getAvaliacoes() {
         return repository.findAll();
     }
 
     @RequestMapping(value = "/membros/{id}", method = RequestMethod.GET)
-    public ResponseEntity<Usuario> getById(@PathVariable(value = "id") long id) {
-        Optional<Usuario> response = repository.findById(id);
+    public ResponseEntity<Membro> getById(@PathVariable(value = "id") long id) {
+        Optional<Membro> response = repository.findById(id);
         if (response.isPresent()) {
-            return new ResponseEntity<Usuario>(response.get(), HttpStatus.OK);
+            return new ResponseEntity<Membro>(response.get(), HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
 
     @RequestMapping(value = "/membros/{username}/{password}", method = RequestMethod.GET)
-    public ResponseEntity<Usuario> getByUsername(@PathVariable(value = "username") String username,
+    public ResponseEntity<Membro> getByUsername(@PathVariable(value = "username") String username,
             @PathVariable(value = "password") String password) {
-        Optional<Usuario> response = repository.findByUsername(username);
+        Optional<Membro> response = repository.findByUsername(username);
         if (response.isPresent()) {
             if (response.get().getSenha().equals(password)) {
-                return new ResponseEntity<Usuario>(response.get(), HttpStatus.ACCEPTED);
+                return new ResponseEntity<Membro>(response.get(), HttpStatus.ACCEPTED);
             } else {
                 return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
             }
@@ -59,22 +59,22 @@ public class UsuarioController {
     }
 
     @RequestMapping(value = "/membros", method = RequestMethod.POST)
-    public ResponseEntity<Usuario> createMembro(@Valid @RequestBody Usuario membro) {
-        Optional<Usuario> response = repository.findByUsername(membro.getUsername());
+    public ResponseEntity<Membro> createMembro(@Valid @RequestBody Membro membro) {
+        Optional<Membro> response = repository.findByUsername(membro.getUsername());
         if (response.isPresent()) {
-            return new ResponseEntity<Usuario>(HttpStatus.CONFLICT);
+            return new ResponseEntity<Membro>(HttpStatus.CONFLICT);
         } else {
             repository.save(membro); // salva no banco
-            return new ResponseEntity<Usuario>(membro, HttpStatus.CREATED);
+            return new ResponseEntity<Membro>(membro, HttpStatus.CREATED);
         }
     }
 
     @RequestMapping(value = "/membros/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<Usuario> Put(@PathVariable(value = "id") long id,
-            @Valid @RequestBody Usuario newMembro) {
-        Optional<Usuario> oldMembro = repository.findById(id);
+    public ResponseEntity<Membro> Put(@PathVariable(value = "id") long id,
+            @Valid @RequestBody Membro newMembro) {
+        Optional<Membro> oldMembro = repository.findById(id);
         if (oldMembro.isPresent()) {
-            Usuario membro = oldMembro.get();
+            Membro membro = oldMembro.get();
             membro.setDataNascimento(newMembro.getDataNascimento());
             membro.setEstado(newMembro.getEstado());
             membro.setNomeCompleto(newMembro.getNomeCompleto());
@@ -83,14 +83,14 @@ public class UsuarioController {
             membro.setUsername(newMembro.getUsername());
             membro.setIsEditor(newMembro.getIsEditor());
             repository.save(membro);
-            return new ResponseEntity<Usuario>(membro, HttpStatus.OK);
+            return new ResponseEntity<Membro>(membro, HttpStatus.OK);
         } else
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
     @RequestMapping(value = "/membros/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Object> Delete(@PathVariable(value = "id") long id) {
-        Optional<Usuario> membro = repository.findById(id);
+        Optional<Membro> membro = repository.findById(id);
         if (membro.isPresent()) {
             repository.delete(membro.get());
             return new ResponseEntity<>(HttpStatus.OK);

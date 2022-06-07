@@ -14,17 +14,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.ApenasBombados.backend.entity.Categoria;
 import br.ApenasBombados.backend.entity.Avaliacao;
 import br.ApenasBombados.backend.entity.BrowserGame;
-import br.ApenasBombados.backend.entity.Categoria;
-import br.ApenasBombados.backend.repository.AvaliaRepository;
+import br.ApenasBombados.backend.repository.AvaliacaoRepository;
 import br.ApenasBombados.backend.repository.BrowserGameRepository;
 import br.ApenasBombados.backend.repository.CategoriaRepository;
 
 @RestController
 public class AvaliacaoController {
     @Autowired
-    private AvaliaRepository repository;
+    private AvaliacaoRepository repository;
 
     @RequestMapping(value = "/avaliacoes", method = RequestMethod.GET)
     public List<Avaliacao> getAvaliacoes() {
@@ -53,7 +53,7 @@ public class AvaliacaoController {
         if (oldAvaliacao.isPresent()) {
             Avaliacao avaliacao = oldAvaliacao.get();
             avaliacao.setEstrelas(newAvaliacao.getEstrelas());
-           // avaliacao.setData(newAvaliacao.getData());
+            avaliacao.setData(newAvaliacao.getData());
             avaliacao.setTexto(newAvaliacao.getTexto());
             repository.save(avaliacao);
             return new ResponseEntity<Avaliacao>(avaliacao, HttpStatus.OK);

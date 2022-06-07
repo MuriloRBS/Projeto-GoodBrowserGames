@@ -7,6 +7,6 @@ import br.ApenasBombados.backend.entity.Avaliacao;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 @Repository
-public interface AvaliaRepository extends JpaRepository<Avaliacao, Long> {
+public interface AvaliacaoRepository extends JpaRepository<Avaliacao, Long> {
 
 }

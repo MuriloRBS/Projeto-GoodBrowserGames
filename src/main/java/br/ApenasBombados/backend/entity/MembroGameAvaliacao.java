@@ -16,14 +16,14 @@ import javax.persistence.Table;
 @Entity
 @JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 @Table(name = "membroGameAvaliacao")
-public class UsuarioGameAvalia {
+public class MembroGameAvaliacao {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false, cascade = { CascadeType.PERSIST, CascadeType.MERGE })
     @JoinColumn(name = "membro_id", nullable = false)
-    private Usuario membro;
+    private Membro membro;
 
     @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY, optional = false, cascade = { CascadeType.PERSIST, CascadeType.MERGE })
@@ -34,7 +34,7 @@ public class UsuarioGameAvalia {
     @JoinColumn(name = "avaliacao_id", nullable = false)
     private Avaliacao avaliacao;
 
-    public UsuarioGameAvalia() {
+    public MembroGameAvaliacao() {
     }
 
     public Long getId() {
@@ -45,11 +45,11 @@ public class UsuarioGameAvalia {
         this.id = id;
     }
 
-    public Usuario getMembro() {
+    public Membro getMembro() {
         return membro;
     }
 
-    public void setMembro(Usuario membro) {
+    public void setMembro(Membro membro) {
         this.membro = membro;
     }
 
@@ -61,11 +61,11 @@ public class UsuarioGameAvalia {
         this.browserGame = browserGame;
     }
 
-    public Avaliacao getAvalia() {
+    public Avaliacao getAvaliacao() {
         return avaliacao;
     }
 
-    public void setAvalia(Avaliacao avaliacao) {
+    public void setAvaliacao(Avaliacao avaliacao) {
         this.avaliacao = avaliacao;
     }
 

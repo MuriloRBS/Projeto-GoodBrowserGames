@@ -20,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Entity
 @JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 @Table(name = "membro")
-public class Usuario {
+public class Membro {
     @Id // chave primária
     @GeneratedValue(strategy = GenerationType.AUTO) // será gerado automaticamente
     private long id;
@@ -48,9 +48,9 @@ public class Usuario {
 
     @OneToMany(mappedBy = "membro", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JsonIgnore
-    private Set<UsuarioGameAvalia> usuarioGameAvalia;
+    private Set<MembroGameAvaliacao> membroGameAvaliacao;
 
-    public Usuario() {
+    public Membro() {
 
     }
 
@@ -110,8 +110,8 @@ public class Usuario {
         this.estado = estado;
     }
 
-    public Set<UsuarioGameAvalia> getUsuarioGameAvalia() {
-        return usuarioGameAvalia;
+    public Set<MembroGameAvaliacao> getMembroGameAvaliacao() {
+        return membroGameAvaliacao;
     }
 
     public boolean getIsEditor() {
