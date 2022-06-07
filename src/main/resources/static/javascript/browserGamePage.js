@@ -70,7 +70,7 @@ function getBrowserGame(){
                     <p>${avaliacao.avaliacao.likes}</p>
                 </div>`
             if (avaliacao.membro.id == userId) {
-                html += `<input type='button' value='Editar'  onclick='saveAvaliacao(${avaliacao.avaliacao.id}); goToUpdateAvaliacao()'>`
+                html += `<input type='button' value='Editar' class="btn-primary" style="background-color:#e22525dc ; color:white ; text-size: 30px;"  onclick='saveAvaliacao(${avaliacao.avaliacao.id}); goToUpdateAvaliacao()'>`
             }
             html += `</div>`;
         }
