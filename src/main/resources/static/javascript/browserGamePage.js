@@ -60,7 +60,6 @@ function getBrowserGame(){
             html += 
             `<div id='avaliacao'>
                 <div id='cabecalho'>
-                    !--<p id='data'>${final_date}</p>-->
                     <p id='userName'>${avaliacao.membro.username}</p>
                 </div>
                 <textarea cols='60' rows='8' id='textoAva'>${avaliacao.avaliacao.texto}</textarea>
