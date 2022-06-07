@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.ApenasBombados.backend.entity.Avalia;
+import br.ApenasBombados.backend.entity.Avaliacao;
 import br.ApenasBombados.backend.entity.BrowserGame;
 import br.ApenasBombados.backend.entity.Categoria;
 import br.ApenasBombados.backend.entity.Usuario;
@@ -61,7 +61,7 @@ public class UserGameAvaliaController {
             @PathVariable(value = "avaliacaoId") long avaliacaoId) {
         Optional<Usuario> responseMembro = membroRepository.findById(membroId);
         Optional<BrowserGame> responseGame = browserGameRepository.findById(gameId);
-        Optional<Avalia> responseAvaliacao = avaliacaoRepository.findById(avaliacaoId);
+        Optional<Avaliacao> responseAvaliacao = avaliacaoRepository.findById(avaliacaoId);
         Optional<UsuarioGameAvalia> responseMGA = repository.findByMembroIdAndBrowserGameId(membroId, gameId);
 
         if (!responseMGA.isPresent()) {

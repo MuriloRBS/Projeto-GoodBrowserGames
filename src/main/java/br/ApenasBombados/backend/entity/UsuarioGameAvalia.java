@@ -32,7 +32,7 @@ public class UsuarioGameAvalia {
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false, cascade = { CascadeType.PERSIST, CascadeType.MERGE })
     @JoinColumn(name = "avaliacao_id", nullable = false)
-    private Avalia avaliacao;
+    private Avaliacao avaliacao;
 
     public UsuarioGameAvalia() {
     }
@@ -61,11 +61,11 @@ public class UsuarioGameAvalia {
         this.browserGame = browserGame;
     }
 
-    public Avalia getAvalia() {
+    public Avaliacao getAvalia() {
         return avaliacao;
     }
 
-    public void setAvalia(Avalia avaliacao) {
+    public void setAvalia(Avaliacao avaliacao) {
         this.avaliacao = avaliacao;
     }
 

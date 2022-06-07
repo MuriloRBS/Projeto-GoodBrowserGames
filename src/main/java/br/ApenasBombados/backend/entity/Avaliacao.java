@@ -20,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Entity
 @JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 @Table(name = "avaliacao")
-public class Avalia {
+public class Avaliacao {
     @Id // chave primária
     @GeneratedValue(strategy = GenerationType.AUTO) // será gerado automaticamente
     private long id;
@@ -41,7 +41,7 @@ public class Avalia {
     @JsonIgnore
     private Set<UsuarioGameAvalia> usuarioGameAvalia;
 
-    public Avalia() {
+    public Avaliacao() {
 
     }
 

@@ -11,25 +11,28 @@ function getBrowserGame(){
             document.getElementById("mensagem").innerHTML += "<p class='error_message'>Erro ao carregar os dados: " + status + " - " + json.message + "</p>";
             return;
         }
-        
         var html = ""
         var img = response.imagem;
         var nome = response.nome;
         var descricao = response.descricao;
         var url = response.url;
         var urlvideo = response.urlvideo
-        html += 
-            `<div id='imagem'>
-                <img src='${img}'>
-            </div>
-            <div id='informacao'>
-                <h1 id='nome'>${nome}</h1>
-                <h3 id='categoria'>categoria</h3>
-                <p id='descricao'>${descricao}</p>
-                <div id='botoes'>
-                    <input type='button' id="avaliar" value='Avaliar' onclick='goToAvaliar()'>
-                    <a href="${url}" target="_blank"><input type='button' value='Jogar'></a>
-                    <a href="${urlvideo}" target="_blank"><input type='button' value='Vídeo'></a>`;
+        html += `
+    <div id='imagem'>
+        <img src='${img}'>
+    </div>
+    <div id='informacao'>
+        <h1 id='nome'>${nome}</h1>
+        <h3 id='categoria'>categoria</h3>
+        <p id='descricao'>${descricao}</p>
+        <div id='botoes'>
+            <input type='button' style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px; " id="avaliar" value='Avaliar' onclick='goToAvaliar()'>
+            <a href="${url}" target="_blank"><input type='button' style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px;" value='Jogar'></a>
+            <a href="${urlvideo}" target="_blank"><input type='button' style="background-color:#e22525dc; color: white;font-family: pricedown; font-size: 40px; border:none;" value='Vídeo'></a>
+        </div>
+    </div>  
+ </div>
+    `
         console.log(userRole)
 
         if (userRole == 1) {
@@ -55,7 +58,7 @@ function getBrowserGame(){
             var myDate = new Date(avaliacao.avaliacao.data);
             var final_date = myDate.getDate()+"-"+(myDate.getMonth()+1)+"-"+myDate.getFullYear();
             html += 
-            `<div id='avaliacao'>
+            `<div id='avaliacao' style="position: fixed;">
                 <div id='cabecalho'>
                     <p id='data'>${final_date}</p>
                     <p id='userName'>${avaliacao.membro.username}</p>

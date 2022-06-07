@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.ApenasBombados.backend.entity.Avalia;
+import br.ApenasBombados.backend.entity.Avaliacao;
 import br.ApenasBombados.backend.entity.BrowserGame;
 import br.ApenasBombados.backend.entity.Categoria;
 import br.ApenasBombados.backend.entity.Usuario;
