@@ -34,8 +34,8 @@ public class Avaliacao {
     @Column(columnDefinition = "TEXT", nullable = false)
     private String texto;
 
-    @Column(nullable = false)
-    private String data;
+   // @Column(nullable = false)
+    //private String data;
 
     @OneToMany(mappedBy = "avaliacao", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JsonIgnore
@@ -77,13 +77,13 @@ public class Avaliacao {
         this.texto = texto;
     }
 
-    public String getData() {
-        return this.data;
-    }
+    //public String getData() {
+       // return this.data;
+    //}
 
-    public void setData(String data) {
-        this.data = data;
-    }
+   // public void setData(String data) {
+        //this.data = data;
+   // }
 
     public Set<UsuarioGameAvalia> getUsuarioGameAvalia() {
         return usuarioGameAvalia;

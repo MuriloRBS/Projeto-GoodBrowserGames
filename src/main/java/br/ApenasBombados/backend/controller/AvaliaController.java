@@ -53,7 +53,7 @@ public class AvaliaController {
         if (oldAvaliacao.isPresent()) {
             Avaliacao avaliacao = oldAvaliacao.get();
             avaliacao.setEstrelas(newAvaliacao.getEstrelas());
-            avaliacao.setData(newAvaliacao.getData());
+           // avaliacao.setData(newAvaliacao.getData());
             avaliacao.setTexto(newAvaliacao.getTexto());
             repository.save(avaliacao);
             return new ResponseEntity<Avaliacao>(avaliacao, HttpStatus.OK);
