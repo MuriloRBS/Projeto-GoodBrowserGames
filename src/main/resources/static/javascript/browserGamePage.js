@@ -29,9 +29,9 @@ function getBrowserGame(){
         <h3 id='categoria'>categoria</h3>
         <p id='descricao'>${descricao}</p>
         <div id='botoes'>
-            <input type='button' id="avaliar" value='Avaliar' onclick='goToAvaliar()'>
-            <a href="${url}" target="_blank"><input type='button' value='Jogar'></a>
-            <a href="${urlvideo}" target="_blank"><input type='button' value='Vídeo'></a>;
+            <input type='button' style="background-color:#e22525dc; border:none;" id="avaliar" value='Avaliar' onclick='goToAvaliar()'>
+            <a href="${url}" target="_blank"><input type='button' style="background-color:#e22525dc; border:none;" value='Jogar'></a>
+            <a href="${urlvideo}" target="_blank"><input type='button' style="background-color:#e22525dc; border:none;" value='Vídeo'></a>;
         </div>
     </div>  
  </div>
