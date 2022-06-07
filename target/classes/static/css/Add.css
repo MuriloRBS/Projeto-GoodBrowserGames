@@ -1,4 +1,33 @@
+section #resposta #avaliacoes #avaliacao #textoAva {
+  width: 100%;
+  background-color: lightgray;
+  border: none;
+  outline: none;
+  font-size: medium;
+}
 
+section #resposta #avaliacoes #avaliacao #nota {
+  font-size: xx-large;
+}
+
+section #resposta #avaliacoes #avaliacao #util {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section #resposta #avaliacoes #avaliacao #util #utilB {
+  height: 30%;
+  width: 80px;
+  border-radius: 10px;
+  text-align: center;
+  border: 0 none;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 4px;
+}
 
 
 
