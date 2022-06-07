@@ -20,36 +20,29 @@ function getBrowserGame(){
         var urlvideo = response.urlvideo
         html += `<div class="container">
         <div class="row">
-          <div class="col">
-            1 of 2
-          </div>
-          <div class="col">
-            2 of 2
-          </div>
-        </div>
         <div class="row">
-          <div class="col">
-            
-          </div>
-          <div class="col">
-          <div id='imagem'>
-          <img src='${img}'>
-      </div>
-      <div id='informacao'>
-          <h1 id='nome'>${nome}</h1>
-          <h3 id='categoria'>categoria</h3>
-          <p id='descricao'>${descricao}</p>
-          <div id='botoes'>
-              <input type='button' id="avaliar" value='Avaliar' onclick='goToAvaliar()'>
-              <a href="${url}" target="_blank"><input type='button' value='Jogar'></a>
-              <a href="${urlvideo}" target="_blank"><input type='button' value='Vídeo'></a>;
-          </div>
-          <div class="col">
-           
-          </div>
+        <div class="col">
+         
         </div>
-      </div>`
-           
+        <div class="col">
+        <div id='imagem'>
+        <img src='${img}'>
+    </div>
+    <div id='informacao'>
+        <h1 id='nome'>${nome}</h1>
+        <h3 id='categoria'>categoria</h3>
+        <p id='descricao'>${descricao}</p>
+        <div id='botoes'>
+            <input type='button' id="avaliar" value='Avaliar' onclick='goToAvaliar()'>
+            <a href="${url}" target="_blank"><input type='button' value='Jogar'></a>
+            <a href="${urlvideo}" target="_blank"><input type='button' value='Vídeo'></a>;
+        </div>
+        <div class="col">
+       
+        </div>
+      </div>
+    </div>`
+
         console.log(userRole)
 
         if (userRole == 1) {
