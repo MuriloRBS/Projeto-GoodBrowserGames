@@ -1,76 +1,11 @@
-section #resposta #avaliacoes {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 24px;
+
+
+
+section #avaliacao{
+   margin-top:20%;
+   background-color: beige;
+   
 }
-
-section #resposta #avaliacoes #avaliacao {
-  background-color: lightgray;
-  border-radius: 10px;
-  width: 40%;
-  margin: 20px;
-  padding: 24px;
-}
-
-section #resposta #avaliacoes #avaliacao #cabecalho {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-section #resposta #avaliacoes #avaliacao #cabecalho #data {
-  margin-bottom: 4;
-  margin-top: 8;
-}
-
-section #resposta #avaliacoes #avaliacao #cabecalho #userName {
-  font-size: xx-large;
-  color: var(--lilas);
-  margin-top: 0;
-}
-
-section #resposta #avaliacoes #avaliacao #textoAva {
-  width: 100%;
-  background-color: lightgray;
-  border: none;
-  outline: none;
-  font-size: medium;
-}
-
-section #resposta #avaliacoes #avaliacao #nota {
-  color: #3DC3B6;
-  font-size: xx-large;
-}
-
-section #resposta #avaliacoes #avaliacao #util {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-section #resposta #avaliacoes #avaliacao #util #utilB {
-  height: 30%;
-  width: 80px;
-  color: var(--azulEscuro);
-  background-color: var(--azul);
-  border-radius: 10px;
-  text-align: center;
-  border: 0 none;
-  padding: 10px;
-  outline: none;
-  cursor: pointer;
-  margin-right: 4px;
-}
-
-
-
-
-
-
 
 .header{
     width: 100%;
