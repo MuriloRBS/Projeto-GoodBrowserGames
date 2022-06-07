@@ -1,6 +1,4 @@
 section #resposta #avaliacoes #avaliacao #textoAva {
-  width: 100%;
-  background-color: lightgray;
   border: none;
   outline: none;
   font-size: medium;
@@ -10,11 +8,10 @@ section #resposta #avaliacoes #avaliacao #nota {
   font-size: xx-large;
 }
 
-section #resposta #avaliacoes #avaliacao #util {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+section #avaliacao{
+  margin-top: 50px;
+  background-color: lightgray;
+  border-radius: 20px;
 }
 
 section #resposta #avaliacoes #avaliacao #util #utilB {
