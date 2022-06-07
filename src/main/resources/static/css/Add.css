@@ -9,6 +9,7 @@ section #resposta #avaliacoes {
 
 section #resposta #avaliacoes #avaliacao {
   background-color: lightgray;
+  margin-top: 20%;
   border-radius: 10px;
   width: 40%;
   margin: 20px;
@@ -41,7 +42,7 @@ section #resposta #avaliacoes #avaliacao #textoAva {
 }
 
 section #resposta #avaliacoes #avaliacao #nota {
-  color: #3DC3B6;
+  color: black;
   font-size: xx-large;
 }
 
