@@ -58,7 +58,7 @@ function getBrowserGame(){
             var myDate = new Date(avaliacao.avaliacao.data);
             var final_date = myDate.getDate()+"-"+(myDate.getMonth()+1)+"-"+myDate.getFullYear();
             html += 
-            `<div id='avaliacao' style="position: fixed;">
+            `<div id='avaliacao'>
                 <div id='cabecalho'>
                     <p id='userName'>${avaliacao.membro.username}</p>
                     <p id='data'>${final_date}</p>
