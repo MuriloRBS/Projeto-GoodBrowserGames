@@ -61,7 +61,9 @@ function getBrowserGame(){
             `<div id='avaliacao'>
                 <div id='cabecalho'>
                     <p id='userName'>${avaliacao.membro.username}</p>
-                    <p id='data'>${final_date}</p>
+                    <p id='data' style="font-family: pricedown;
+                    color: white;
+                    font-size: 45px;">${final_date}</p>
                 </div>
                 <textarea cols='60' rows='8' id='textoAva'>${avaliacao.avaliacao.texto}</textarea>
                 <p id='nota'>Nota: ${avaliacao.avaliacao.estrelas}</p>
