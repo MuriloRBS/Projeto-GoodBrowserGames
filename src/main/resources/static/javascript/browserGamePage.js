@@ -67,7 +67,9 @@ function getBrowserGame(){
                 <p id='nota'>Nota: ${avaliacao.avaliacao.estrelas}</p>
                 <div id="util">
                     <input type='button' id='utilB' value='Útil' style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px;"  onclick='marcarUtil(${avaliacao.avaliacao.id})'>
-                    <p>${avaliacao.avaliacao.likes}</p>
+                    <p style=" font-family: pricedown;
+                    color: white;
+                    font-size: 45px;">${avaliacao.avaliacao.likes}</p>
                 </div>`
             if (avaliacao.membro.id == userId) {
                 html += `<input type='button' value='Editar' class="btn-primary" style="style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px;"  onclick='saveAvaliacao(${avaliacao.avaliacao.id}); goToUpdateAvaliacao()'>`
