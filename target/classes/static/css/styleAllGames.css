@@ -234,23 +234,54 @@ section #resposta #avaliacoes #avaliacao #util #utilB {
     margin-right: 4px;
 }
 
-footer {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    height: 70px;
-    padding-left: 10px;
-    padding-right: 10px;
-    bottom: 0;
-    background-color: var(--lilas);
-    width: 100%;
-}
 
-footer p {
-    font-size: 12pt;
-    color: white;
+
+
+section #resposta #avaliacoes #avaliacao #textoAva {
+    border: none;
+    outline: none;
+    background-color: transparent;
+      font-family: pricedown;
+      color: white;
+      font-size: 30px;
+      margin-left: 100px;
+  }
+  section #resposta #avaliacoes #avaliacao #userName{
+    background-color: transparent;
+      font-family: pricedown;
+      color: white;
+      font-size: 45px;
+  }
+  
+  section #resposta #avaliacoes #avaliacao #nota {
+    background-color: transparent;
+      font-family: pricedown;
+      color: white;
+      font-size: 45px;
+  }
+  
+  section #avaliacao{
+    margin-top: 50px;
+    background-color: lightgray;
+    border-radius: 20px;
+    padding-bottom: 50px;
+  }
+  
+  section #resposta #avaliacoes #avaliacao #util #utilB {
+   
+    width: 80px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0 none;
     padding: 10px;
-}
+    outline: none;
+    cursor: pointer;
+    margin-right: 4px;
+  }
+
+
+
+
 
 .header{
     width: 100%;
