@@ -15,14 +15,14 @@ function getAllGames(){
                 if (categoria.browserGames.length == 0) {
                     continue
                 }
-                var html = "<div class='categoria'><div class='titulo'><h2>" + categoria.nome + "</h2></div><div class='browserGames'>" ;
+                var html = "<div class='categoria' style='font-size:20px;'><div class='titulo'><h2>" + categoria.nome + "</h2></div><div class='browserGames'>" ;
                 for(var j=0; j<categoria.browserGames.length; j++) {
                     let browserGame = categoria.browserGames[j];
                     html += `
                     <a href="browserGame.html" onclick= "saveGame(${browserGame.id}); saveCategoria(${categoria.id})">
                         <div class='browserGame'>
                                 <div class='imagem'><img src="${browserGame.imagem}"/></div>
-                                <p id='nome'>${browserGame.nome}</p>
+                                <p id='nome' style="font-size:20px;">${browserGame.nome}</p>
                                 <p id='categoria'>${categoria.nome}</p>
                         </div>
                     </a>`;
