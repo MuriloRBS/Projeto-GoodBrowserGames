@@ -158,51 +158,49 @@ section #resposta .categoria .browserGames a {
 }
 
 
+section #resposta #avaliacoes #avaliacao {
+    background-color: lightgray;
+    border-radius: 10px;
+    width: 40%;
+    margin: 20px;
+    padding: 24px;
+}
 
+#avaliacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 24px;
+    font-family: pricedown;
+}
+section #resposta #avaliacoes #avaliacao #util #utilB {
+    width: 150px;
+  border-radius: 10px;
+  text-align: center;
+  border: 0 none;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 4px;
+}
 
-
+section #resposta #avaliacoes #avaliacao #cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: pricedown;
+}
 
 section #resposta #avaliacoes #avaliacao #textoAva {
+    width: 100%;
+    background-color: lightgray;
     border: none;
     outline: none;
-    background-color: transparent;
-      font-family: pricedown;
-      color: white;
-      font-size: 30px;
-      margin-left: 100px;
-  }
-  section #resposta #avaliacoes #avaliacao #userName{
-    background-color: transparent;
-      font-family: pricedown;
-      color: white;
-      font-size: 45px;
-  }
-  
-  section #resposta #avaliacoes #avaliacao #nota {
-    background-color: transparent;
-      font-family: pricedown;
-      color: white;
-      font-size: 45px;
-  }
-  
-  section #avaliacao{
-    margin-top: 50px;
-    background-color: lightgray;
-    border-radius: 20px;
-    padding-bottom: 50px;
-  }
-  
-  section #resposta #avaliacoes #avaliacao #util #utilB {
-   
-    width: 80px;
-    border-radius: 10px;
-    text-align: center;
-    border: 0 none;
-    padding: 10px;
-    outline: none;
-    cursor: pointer;
-    margin-right: 4px;
-  }
+    font-size: medium;
+    font-family: pricedown;
+}
 
 
 

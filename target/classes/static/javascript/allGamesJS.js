@@ -95,7 +95,7 @@ function getTopAvaliacoes(){
                         <p>${avaliacao.avaliacao.likes}</p>
                     </div>`
                 if (avaliacao.membro.id == userId) {
-                    html += `<input type='button' value='Editar'  onclick='saveAvaliacao(${avaliacao.avaliacao.id}); goToUpdateAvaliacao()'>`
+                    html += `<input type='button' value='Editar' class="btn-primary" style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px; margin-bottom:20px;" onclick='saveAvaliacao(${avaliacao.avaliacao.id}); goToUpdateAvaliacao()'>`
                 }
                 html += `</div></div>`;
             }
