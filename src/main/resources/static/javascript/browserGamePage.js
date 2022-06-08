@@ -38,8 +38,8 @@ function getBrowserGame(){
         if (userRole == 1) {
             console.log("aoba")
             html +=  `
-            <input type='button' value='Atualizar' style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px;"  onclick='goToUpdate()'>
-            <input type='button' value='Deletar' style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px; margin-left:20px;" onclick='deleteGame(${save})'>`
+            <input type='button' value='Atualizar' style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px; margin-top:20px;"  onclick='goToUpdate()'>
+            <input type='button' value='Deletar' style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px; margin-left:20px;margin-top:20px;" onclick='deleteGame(${save})'>`
         }   
         html += `</div></div>`;
         getNameCategoria(categoriaId);
@@ -74,7 +74,7 @@ function getBrowserGame(){
                     font-size: 45px;">${avaliacao.avaliacao.likes}</p>
                 </div>`
             if (avaliacao.membro.id == userId) {
-                html += `<input type='button' value='Editar' class="btn-primary" style="style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px;"  onclick='saveAvaliacao(${avaliacao.avaliacao.id}); goToUpdateAvaliacao()'>`
+                html += `<input type='button' value='Editar' class="btn-primary" style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px; margin-bottom:20px;"  onclick='saveAvaliacao(${avaliacao.avaliacao.id}); goToUpdateAvaliacao()'>`
             }
             html += `</div>`;
         }
