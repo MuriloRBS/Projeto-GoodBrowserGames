@@ -21,9 +21,6 @@ body {
     background-color: var(--bgColor);
 }
 
-* {
-    font-family: projectFont;
-}
 
 nav ul li {
     cursor: pointer;
@@ -110,10 +107,11 @@ section #resposta {
 
 section #resposta .categoria .titulo {
     margin: 0 15px;
+    font-family: pricedown;
 }
 
 section #resposta .categoria .browserGames {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: flex-start;
     overflow: scroll;
