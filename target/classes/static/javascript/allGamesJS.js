@@ -88,7 +88,7 @@ function getTopAvaliacoes(){
                         <p id='data'>${final_date}</p>
                         <p id='userName'>${avaliacao.membro.username}</p>
                     </div>
-                    <textarea cols='60' rows='8' id='textoAva'>${avaliacao.avaliacao.texto}</textarea>
+                    <textarea cols='60' rows='8' id='textoAva' style="background-color:lightgray; color:white;">${avaliacao.avaliacao.texto}</textarea>
                     <p id='nota'>Nota: ${avaliacao.avaliacao.estrelas}</p>
                     <div id="util">
                         <input type='button' id='utilB' value='Gostei' class="btn-primary" style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px; margin-bottom:20px;" onclick='marcarUtil(${avaliacao.avaliacao.id})'>
