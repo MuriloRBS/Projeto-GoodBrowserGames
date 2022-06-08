@@ -23,8 +23,8 @@ function getBrowserGame(){
     </div>
     <div id='informacao'>
         <h1 id='nome'>${nome}</h1>
-        <h3 id='categoria'>categoria</h3>
-        <p id='descricao'>${descricao}</p>
+        <h3 id='categoria' style="font-size:20px;">categoria</h3>
+        <p id='descricao' style="font-size:30px;">${descricao}</p>
         <div id='botoes'>
             <input type='button' style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px; " id="avaliar" value='Avaliar' onclick='goToAvaliar()'>
             <a href="${url}" target="_blank"><input type='button' style="background-color:#e22525dc; border:none; color: white;font-family: pricedown; font-size: 40px;" value='Jogar'></a>
