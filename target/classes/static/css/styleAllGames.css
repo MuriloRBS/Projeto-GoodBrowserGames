@@ -1,17 +1,5 @@
-/* Variáveis */
-:root{
-    --lilas: #D475B3;
-    --azul: #3DC3B6;
-    --azulEscuro: #1B2D51;
-    --bgColor: #F5F5F5;
-    --cinza: #D4D5DD;
-}
 
-/* Fontes */
-@font-face {
-    font-family: 'projectFont';
-    src: url(../fonts/Aldrich-Regular.ttf);
-}
+
 
 /* Reset */
 html, body {
@@ -24,9 +12,6 @@ body {
     background-color: var(--bgColor);
 }
 
-* {
-    font-family: projectFont;
-}
 
 nav ul li {
     cursor: pointer;
@@ -155,7 +140,7 @@ section #resposta .categoria .browserGames a {
 }
 
 .browserGame #categoria {
-    color: var(--lilas);
+    color:#e22525dc;;
     margin-top: 4px;
 }
 
