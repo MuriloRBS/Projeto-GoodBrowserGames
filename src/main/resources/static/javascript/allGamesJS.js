@@ -91,7 +91,7 @@ function getTopAvaliacoes(){
                     <textarea cols='60' rows='8' id='textoAva'>${avaliacao.avaliacao.texto}</textarea>
                     <p id='nota'>Nota: ${avaliacao.avaliacao.estrelas}</p>
                     <div id="util">
-                        <input type='button' id='utilB' value='Útil' onclick='marcarUtil(${avaliacao.avaliacao.id})'>
+                        <input type='button' id='utilB' value='Gostei' onclick='marcarUtil(${avaliacao.avaliacao.id})'>
                         <p>${avaliacao.avaliacao.likes}</p>
                     </div>`
                 if (avaliacao.membro.id == userId) {
