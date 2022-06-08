@@ -186,6 +186,13 @@ section #resposta #avaliacoes #avaliacao #util #utilB {
   margin-right: 4px;
 }
 
+section #resposta #avaliacoes #avaliacao #textoAva {
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+    outline: none;
+    font-size: 45px;
+}
 section #resposta #avaliacoes #avaliacao #cabecalho {
     display: flex;
     flex-direction: column;
@@ -203,7 +210,10 @@ section #resposta #avaliacoes #avaliacao #textoAva {
 }
 
 
-
+section #resposta #avaliacoes #avaliacao #cabecalho {
+    color:white;
+    font-size: 45px;
+}
 
 
 .header{
