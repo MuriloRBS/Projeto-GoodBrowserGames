@@ -82,7 +82,10 @@ function getTopAvaliacoes(){
                 var myDate = new Date(avaliacao.avaliacao.data);
                 var final_date = myDate.getDate()+"-"+(myDate.getMonth()+1)+"-"+myDate.getFullYear();
                 html += 
-                `<div id='avaliacoes'><div id='avaliacao'>
+                `<div id='avaliacoes' style="border-radius: 20px;><div id='avaliacao' style="margin-top: 50px;
+                background-color: lightgray;
+                border-radius: 20px;
+                padding-bottom: 50px;">
                     <div id='cabecalho'>
                         <p id='data'>${final_date}</p>
                         <p id='userName'>${avaliacao.membro.username}</p>
