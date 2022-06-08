@@ -174,6 +174,7 @@ section #resposta #avaliacoes #avaliacao {
     flex-wrap: wrap;
     margin: 24px;
     font-family: pricedown;
+    font-size: 40px;
 }
 section #resposta #avaliacoes #avaliacao #util #utilB {
     width: 150px;
@@ -198,22 +199,11 @@ section #resposta #avaliacoes #avaliacao #cabecalho {
     flex-direction: column;
     justify-content: flex-start;
     font-family: pricedown;
-}
-
-section #resposta #avaliacoes #avaliacao #textoAva {
-    width: 100%;
-    background-color: lightgray;
-    border: none;
-    outline: none;
-    font-size: medium;
-    font-family: pricedown;
-}
-
-
-section #resposta #avaliacoes #avaliacao #cabecalho {
     color:white;
     font-size: 45px;
 }
+
+
 
 
 .header{
